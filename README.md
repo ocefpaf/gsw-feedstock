@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/gsw-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/gsw-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/gsw-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/gsw-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/gsw-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/gsw-feedstock/branch/master)
