@@ -1,7 +1,7 @@
 About gsw
 =========
 
-Home: https://github.com/TEOS-10/python-gsw/
+Home: https://github.com/TEOS-10/GSW-Python/
 
 Package license: MIT
 
