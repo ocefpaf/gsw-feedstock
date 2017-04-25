@@ -1,4 +1,4 @@
-{% set version = "3.1.0" %}
+{% set version = "3.1.1" %}
 
 package:
   name: gsw
@@ -6,8 +6,8 @@ package:
 
 source:
   fn: gsw-{{ version }}.tar.gz
-  url: https://github.com/TEOS-10/GSW-Python/archive/v{{ version }}.tar.gz
-  sha256: 2ed3c511825f303746c3d010ec20f402f64d28b1b27fde50fb4d19579a805e77
+  url: https://pypi.io/packages/source/g/gsw/gsw-{{ version }}.tar.gz
+  sha256: 75162700ace7defeb7bc77a62319eb759ea32f8541962e3b7b6807c87e94921d
 
 build:
   number: 0
@@ -28,7 +28,7 @@ test:
     - gsw
 
 about:
-  home: https://github.com/TEOS-10/python-gsw/
+  home: https://github.com/TEOS-10/GSW-Python/
   license: MIT
   license_file: LICENSE
   summary: 'Gibbs SeaWater Oceanographic Package of TEOS-10.'
