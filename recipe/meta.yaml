@@ -5,12 +5,11 @@ package:
   version: {{ version }}
 
 source:
-  fn: gsw-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/g/gsw/gsw-{{ version }}.tar.gz
   sha256: 75162700ace7defeb7bc77a62319eb759ea32f8541962e3b7b6807c87e94921d
 
 build:
-  number: 0
+  number: 1
   skip: True  # [py2k]
   script: python setup.py install --single-version-externally-managed --record record.txt
 
@@ -18,10 +17,10 @@ requirements:
   build:
     - python
     - setuptools
-    - numpy x.x
+    - numpy 1.11.*
   run:
     - python
-    - numpy x.x
+    - numpy >=1.11
 
 test:
   imports:
@@ -31,7 +30,7 @@ about:
   home: https://github.com/TEOS-10/GSW-Python/
   license: MIT
   license_file: LICENSE
-  summary: 'Gibbs SeaWater Oceanographic Package of TEOS-10.'
+  summary: 'Gibbs SeaWater Oceanographic Package of TEOS-10'
 
 extra:
   recipe-maintainers:
