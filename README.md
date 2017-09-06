@@ -7,7 +7,7 @@ Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-Summary: Gibbs SeaWater Oceanographic Package of TEOS-10.
+Summary: Gibbs SeaWater Oceanographic Package of TEOS-10
 
 
 
