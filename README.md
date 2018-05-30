@@ -14,14 +14,16 @@ Summary: Gibbs SeaWater Oceanographic Package of TEOS-10
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/gsw-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/gsw-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/gsw-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/gsw-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/gsw-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/gsw-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/gsw-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/gsw-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/gsw-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/gsw-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/gsw-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/gsw-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/gsw/badges/version.svg)](https://anaconda.org/conda-forge/gsw)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/gsw/badges/downloads.svg)](https://anaconda.org/conda-forge/gsw)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-gsw-green.svg)](https://anaconda.org/conda-forge/gsw) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/gsw.svg)](https://anaconda.org/conda-forge/gsw) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/gsw.svg)](https://anaconda.org/conda-forge/gsw) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/gsw.svg)](https://anaconda.org/conda-forge/gsw) |
 
 Installing gsw
 ==============
@@ -66,6 +68,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
