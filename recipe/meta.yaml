@@ -1,4 +1,4 @@
-{% set version = "3.3.0" %}
+{% set version = "3.3.1" %}
 
 package:
   name: gsw
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/g/gsw/gsw-{{ version }}.tar.gz
-  sha256: 46f153a3812459d97153694f814efb737c0b46951bbbf1314d31239ecdf2d93b
+  sha256: 6df01fb67f318f8c42de7afa7cf276c91a9d8765052e62040e1560a8d9e52556
 
 build:
   number: 0
