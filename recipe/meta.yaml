@@ -9,9 +9,9 @@ source:
   sha256: 6df01fb67f318f8c42de7afa7cf276c91a9d8765052e62040e1560a8d9e52556
 
 build:
-  number: 0
+  number: 1
   skip: True  # [py<=34]
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
@@ -19,7 +19,7 @@ requirements:
   host:
     - python
     - pip
-    - numpy 1.11.*
+    - numpy
   run:
     - python
     - {{ pin_compatible('numpy') }}
