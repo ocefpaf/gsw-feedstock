@@ -26,13 +26,15 @@ requirements:
     - {{ pin_compatible('numpy') }}
 
 test:
+  requires:
+    - pip
+    - pytest
   imports:
     - gsw
     - gsw.ice
   commands:
     - pip check
-  requires:
-    - pip
+    - pytest --pyargs gsw
 
 about:
   home: https://github.com/TEOS-10/GSW-Python/
