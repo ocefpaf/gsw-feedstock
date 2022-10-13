@@ -34,8 +34,10 @@ test:
     - gsw.ice
   commands:
     - pip check
+    - pytest --pyargs gsw
   requires:
     - pip
+    - pytest
 
 about:
   home: https://github.com/TEOS-10/GSW-Python/
