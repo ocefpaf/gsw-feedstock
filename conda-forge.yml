@@ -7,3 +7,6 @@ github:
 provider:
   win: azure
 test_on_native_only: true
+provider:
+  linux_aarch64: default
+  linux_ppc64le: default
