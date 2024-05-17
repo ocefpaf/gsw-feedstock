@@ -1,4 +1,4 @@
-{% set version = "3.6.17" %}
+{% set version = "3.6.18" %}
 
 package:
   name: gsw
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/g/gsw/gsw-{{ version }}.tar.gz
-  sha256: e13979e1ba29fd41f63c8a3cbb1c47fe50b602d8ce9357b4008b0c2f6e76c665
+  sha256: 16011b2a5fb4441c26928ee7aa2f94d02f93c2953ec150e523517cdc654fc927
 
 build:
-  number: 2
+  number: 0
   skip: true  # [py<38]
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   build:
