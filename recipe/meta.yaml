@@ -1,4 +1,4 @@
-{% set version = "3.6.18" %}
+{% set version = "3.6.19" %}
 
 package:
   name: gsw
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/g/gsw/gsw-{{ version }}.tar.gz
-  sha256: 16011b2a5fb4441c26928ee7aa2f94d02f93c2953ec150e523517cdc654fc927
+  sha256: 3595b686458d852444ae6f1946d260a7c8f16ba457e9061aa953cf417927423f
 
 build:
   number: 0
@@ -36,7 +36,7 @@ test:
     - pip check
     - pytest --pyargs gsw
   requires:
-    - pandas >=2 
+    - pandas >=2
     - pip
     - pytest
 
