@@ -18,6 +18,11 @@ build:
 
 requirements:
   build:
+    - if: build_platform != target_platform
+      then:
+        - python
+        - cross-python_${{ target_platform }}
+        - numpy >=2,<3
     - ${{ compiler('c') }}
     - ${{ stdlib('c') }}
   host:
