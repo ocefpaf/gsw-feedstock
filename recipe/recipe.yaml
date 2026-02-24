@@ -1,0 +1,60 @@
+schema_version: 1
+
+context:
+  version: 3.6.21
+
+package:
+  name: gsw
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/g/gsw/gsw-${{ version }}.tar.gz
+  sha256: 6e0609d374916b4393484b9c7b32666d36dda74d900a40d19c766484ac295efa
+
+build:
+  number: 0
+  skip: match(python, "<3.11")
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  build:
+    - if: build_platform != target_platform
+      then:
+        - python
+        - cross-python_${{ target_platform }}
+        - numpy >=2,<3
+    - ${{ compiler('c') }}
+    - ${{ stdlib('c') }}
+  host:
+    - python
+    - numpy >=2,<3
+    - pip
+    - setuptools >=42
+    - setuptools-scm >=3.4
+  run:
+    - python
+    - numpy
+
+tests:
+  - python:
+      imports:
+        - gsw
+  - requirements:
+      run:
+        - pip
+        - pytest
+        - pandas >=2
+    script:
+      - pip check
+      - pytest --pyargs gsw
+
+about:
+  summary: Gibbs Seawater Oceanographic Package of TEOS-10
+  license: BSD-3-Clause
+  license_file: LICENSE.txt
+  homepage: https://pypi.org/project/gsw/
+
+extra:
+  recipe-maintainers:
+    - efiring
+    - ocefpaf
