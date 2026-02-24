@@ -19,6 +19,7 @@ build:
 requirements:
   build:
     - ${{ compiler('c') }}
+    - ${{ stdlib('c') }}
   host:
     - python
     - numpy >=2,<3
@@ -26,7 +27,7 @@ requirements:
     - setuptools >=42
     - setuptools-scm >=3.4
   run:
-    - python >=${{ python_min }}
+    - python
     - numpy
 
 tests:
